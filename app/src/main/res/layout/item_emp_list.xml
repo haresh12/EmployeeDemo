@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_emp_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_emp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/txt_emp_age"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="240000dddddd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_emp_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_emp_name"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
